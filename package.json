@@ -1,7 +1,7 @@
 {
 	"name": "n8n-nodes-tribecrm",
 	"version": "0.1.0",
-	"description": "n8n community node for Tribe CRM – manage persons, organizations, contacts, leads, sales opportunities, tasks, appointments, invoices, and webhooks in automated workflows.",
+	"description": "n8n community node for Tribe CRM – manage persons, organizations, contacts, leads, sales opportunities, tasks, appointments, and invoices in automated workflows.",
 	"license": "MIT",
 	"homepage": "https://github.com/efficy-sa/n8n-nodes-tribecrm",
 	"keywords": [
@@ -16,11 +16,12 @@
 		"url": "https://github.com/efficy-sa/n8n-nodes-tribecrm.git"
 	},
 	"scripts": {
-		"build": "tsc && node -e \"const fs=require('fs');fs.mkdirSync('dist/icons',{recursive:true});fs.copyFileSync('icons/tribecrm.svg','dist/icons/tribecrm.svg');\"",
-		"dev": "tsc --watch",
+		"build": "n8n-node build",
+		"dev": "n8n-node dev",
 		"lint": "n8n-node lint",
 		"lint:fix": "n8n-node lint --fix",
-		"prepublishOnly": "npm run build"
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
 	},
 	"files": [
 		"dist"
@@ -39,6 +40,7 @@
 		"@n8n/node-cli": "*",
 		"eslint": "9.32.0",
 		"prettier": "3.6.2",
+		"release-it": "^19.0.4",
 		"typescript": "5.9.2"
 	},
 	"peerDependencies": {

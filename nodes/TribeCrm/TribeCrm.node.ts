@@ -16,7 +16,7 @@ export class TribeCrm implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Tribe CRM',
 		name: 'tribeCrm',
-		icon: { light: 'file:../../icons/tribecrm.svg', dark: 'file:../../icons/tribecrm.svg' },
+		icon: { light: 'file:../../icons/tribecrm.svg', dark: 'file:../../icons/tribecrm.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',

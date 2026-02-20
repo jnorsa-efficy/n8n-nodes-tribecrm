@@ -25,7 +25,7 @@ export const employeeOperations: INodeProperties[] = [
 				name: 'Get Many',
 				value: 'getAll',
 				action: 'Get many employees',
-				description: 'Retrieve a list of all employees',
+				description: 'Retrieve a list of many employees',
 				routing: {
 					request: { method: 'GET', url: '/Relationship_Person_Contact_Employee' },
 					output: {

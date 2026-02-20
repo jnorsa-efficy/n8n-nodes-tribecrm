@@ -11,7 +11,7 @@ export class TribeCrmOAuth2Api implements ICredentialType {
 
 	icon = {
 		light: 'file:../icons/tribecrm.svg',
-		dark: 'file:../icons/tribecrm.svg',
+		dark: 'file:../icons/tribecrm.dark.svg',
 	} as const;
 
 	test: ICredentialTestRequest = {
