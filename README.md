@@ -11,7 +11,7 @@ Tribe CRM is a Dutch CRM platform that helps businesses manage their relationshi
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
-- [Tribe CRM API documentation](https://api.tribecrm.nl/swagger)
+- [Tribe CRM API documentation (Postman)](https://www.postman.com/tribecrm/tribe-crm-client-api/overview)
 
 ---
 

@@ -21,6 +21,7 @@ export class TribeCrm implements INodeType {
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Manage persons, organizations, contacts, leads, sales opportunities, tasks, appointments, and invoices in Tribe CRM',
+		documentationUrl: 'https://www.postman.com/tribecrm/tribe-crm-client-api/overview',
 		defaults: { name: 'Tribe CRM' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],

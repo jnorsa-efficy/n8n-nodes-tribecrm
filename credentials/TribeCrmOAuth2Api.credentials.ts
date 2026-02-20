@@ -7,7 +7,7 @@ export class TribeCrmOAuth2Api implements ICredentialType {
 
 	displayName = 'Tribe CRM OAuth2 API';
 
-	documentationUrl = 'https://api.tribecrm.nl/swagger';
+	documentationUrl = 'https://www.postman.com/tribecrm/tribe-crm-client-api/overview';
 
 	icon = {
 		light: 'file:../icons/tribecrm.svg',
