@@ -17,8 +17,7 @@ export class TribeCrmOAuth2Api implements ICredentialType {
 	test: ICredentialTestRequest = {
 		request: {
 			baseURL: '={{$credentials.apiUrl}}/v1/odata',
-			url: '/Employee',
-			qs: { $top: '1' },
+			url: '/GetCurrentEmployee()',
 		},
 	};
 
