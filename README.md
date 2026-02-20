@@ -23,14 +23,13 @@ Tribe CRM is a Dutch CRM platform that helps businesses manage their relationshi
 | **Contact** | Create, Get Many |
 | **Customer** | Create, Get Many, Update |
 | **Employee** | Get Current, Get Many |
-| **Invoice** | Get Many, Update Phase |
+| **Invoice** | Get Many, Update Phase | ⚠️ Requires Billing module |
 | **Lead** | Create, Get Many, Upgrade to Customer |
 | **Organization** | Create, Delete, Get Many, Update |
 | **Person** | Create, Delete, Get Many, Update |
 | **Product** | Get Many |
 | **Sales Opportunity** | Create, Get Many, Update |
 | **Task** | Create |
-| **Webhook** | Create, Delete, Get Many |
 
 All **Get Many** operations support standard OData query parameters: `$filter`, `$select`, `$expand`, `$orderby`, `$top` (limit), and `$skip` (pagination).
 

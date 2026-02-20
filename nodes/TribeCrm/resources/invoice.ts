@@ -3,6 +3,14 @@ import { getODataOptions } from './common';
 
 export const invoiceOperations: INodeProperties[] = [
 	{
+		displayName:
+			'Invoice operations require the Billing module to be activated in your Tribe CRM instance. If you see an "entity type not found" error, please check that the Billing module is enabled in your Tribe CRM settings.',
+		name: 'billingModuleNotice',
+		type: 'notice',
+		default: '',
+		displayOptions: { show: { resource: ['invoice'] } },
+	},
+	{
 		displayName: 'Operation',
 		name: 'operation',
 		type: 'options',

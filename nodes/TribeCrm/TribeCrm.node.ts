@@ -11,7 +11,6 @@ import { personFields, personOperations } from './resources/person';
 import { productFields, productOperations } from './resources/product';
 import { salesOpportunityFields, salesOpportunityOperations } from './resources/salesOpportunity';
 import { taskFields, taskOperations } from './resources/task';
-import { webhookFields, webhookOperations } from './resources/webhook';
 
 export class TribeCrm implements INodeType {
 	description: INodeTypeDescription = {
@@ -21,7 +20,7 @@ export class TribeCrm implements INodeType {
 		group: ['input'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-		description: 'Manage persons, organizations, contacts, leads, sales opportunities, tasks, appointments, invoices, and webhooks in Tribe CRM',
+		description: 'Manage persons, organizations, contacts, leads, sales opportunities, tasks, appointments, and invoices in Tribe CRM',
 		defaults: { name: 'Tribe CRM' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
@@ -58,7 +57,6 @@ export class TribeCrm implements INodeType {
 					{ name: 'Product', value: 'product' },
 					{ name: 'Sales Opportunity', value: 'salesOpportunity' },
 					{ name: 'Task', value: 'task' },
-					{ name: 'Webhook', value: 'webhook' },
 				],
 				default: 'person',
 			},
@@ -96,9 +94,6 @@ export class TribeCrm implements INodeType {
 
 			...taskOperations,
 			...taskFields,
-
-			...webhookOperations,
-			...webhookFields,
 		],
 	};
 }
