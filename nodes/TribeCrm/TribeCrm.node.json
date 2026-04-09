@@ -1,0 +1,14 @@
+{
+	"node": "n8n-nodes-tribecrm.tribeCrm",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Sales"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/efficy-sa/n8n-nodes-tribecrm"
+			}
+		]
+	},
+	"alias": ["CRM", "Tribe CRM", "tribe", "tribecrm", "contact", "lead", "organization", "person"]
+}
